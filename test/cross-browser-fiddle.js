@@ -19,7 +19,6 @@ test('fiddlin', function (t) {
     , 'setBaseAndExtent'
     , 'setPosition'
   ];
-  console.log('asdf', JSON.stringify(t), 'asdf');
   methods.forEach(function forEachMethod(method) {
     if (Selection.prototype[method]) {
       console.log('++' + method);
