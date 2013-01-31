@@ -1,6 +1,6 @@
 var test = require('tape');
 var JSON = require('json3');
-require('es5');
+//require('es5');
 
 test('fiddlin', function (t) {
   var methods = [
