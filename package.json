@@ -10,7 +10,7 @@
         "tap" : "~0.3.0",
         "tape" : "~0.2.2",
         "json3": "*",
-        "es5": "*" 
+        "underscore": "~1.4"
     },
     "scripts" : {
         "test" : "tap test/*.js"

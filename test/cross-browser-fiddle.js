@@ -1,6 +1,6 @@
 var test = require('tape');
 var JSON = require('json3');
-//require('es5');
+var _ = require('underscore');
 
 test('fiddlin', function (t) {
   var methods = [
@@ -20,7 +20,7 @@ test('fiddlin', function (t) {
     , 'setBaseAndExtent'
     , 'setPosition'
   ];
-  methods.forEach(function forEachMethod(method) {
+  _.each(methods, function forEachMethod(method) {
     if (Selection.prototype[method]) {
       console.log('++' + method);
     } else {
