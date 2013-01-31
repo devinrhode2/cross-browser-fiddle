@@ -9,7 +9,8 @@
     "devDependencies" : {
         "tap" : "~0.3.0",
         "tape" : "~0.2.2",
-        "json3": "*"
+        "json3": "*",
+        "es5": "*"
     },
     "scripts" : {
         "test" : "tap test/*.js"

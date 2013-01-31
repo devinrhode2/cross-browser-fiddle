@@ -28,3 +28,14 @@ test('fiddlin', function (t) {
   });
   t.end();
 });
+
+/**
+addRange
+collapse
+collapseToEnd
+collapseToStart
+deleteFromDocument
+getRangeAt
+removeAllRanges
+selectAllChildren
+*/
