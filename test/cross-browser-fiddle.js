@@ -1,4 +1,5 @@
 var test = require('tape');
+var JSON = require('json3');
 
 test('fiddlin', function (t) {
   var methods = [
@@ -18,13 +19,13 @@ test('fiddlin', function (t) {
     , 'setBaseAndExtent'
     , 'setPosition'
   ];
-  console.log(t);
+  console.log('asdf', JSON.stringify(t), 'asdf');
   methods.forEach(function forEachMethod(method) {
-    if (window.Selection.prototype[method]) {
-      console.log('has ' + method);
+    if (Selection.prototype[method]) {
+      console.log('++' + method);
     } else {
-      console.log('doesnt have: '  + method);
-    } 
+      console.log('--'  + method);
+    }
   });
   t.end();
 });
