@@ -24,7 +24,7 @@ test('fiddlin', function (t) {
       console.log('has ' + method);
     } else {
       console.log('doesnt have: '  + method);
-    }
+    } 
   });
   t.end();
 });
