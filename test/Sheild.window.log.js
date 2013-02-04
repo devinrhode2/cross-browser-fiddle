@@ -1,4 +1,6 @@
 //super optimized. ya heard me
+var test = require('tape');
+
 (function windowLogWrapper() {
   var consoleLogDefined = (
     typeof console === 'object' &&
