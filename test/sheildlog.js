@@ -1,7 +1,10 @@
 //super optimized. ya heard me
 var test = require('tape');
 
-(function windowLogWrapper() {
+//some tests to verify the stranger parts work as expected
+test('basicness', function elnamo(t) {
+
+(function() {
   var consoleLogDefined = (
     typeof console === 'object' &&
     typeof console.log === 'function' &&
@@ -18,13 +21,11 @@ var test = require('tape');
   log.history = log.history || [];
 }());
 
-//some tests to verify the stranger parts work as expected
-test('basicness', function elnamo(){
   log('things');
   t.equal(log.history, [['things', 'caller:elnamo']]);
 });
 
-test('consistent console.log.name', function(){
+test('consistent console.log.name', function(t){
   if (typeof console === 'object' && typeof console.log === 'function') {
     t.equal(console.log.name, 'log');
   } else {
@@ -32,7 +33,7 @@ test('consistent console.log.name', function(){
   }
 });
 
-test('arguments mutation when pushed onto other array, and then having more stuff pushed onto IT', function(){
+test('arguments mutation when pushed onto other array, and then having more stuff pushed onto IT', function(t){
   var arr = [];
   (function testingArguments() {
     var length = arguments.length;
