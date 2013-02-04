@@ -18,14 +18,9 @@
     "testling" : {
         "files" : "test/*.js",
         "browsers" : [
-          "iexplore/6.0",
-          "iexplore/7.0",
           "iexplore/8.0",
           "iexplore/10.0",
           "iexplore/9.0",
-          "chrome/20.0",
-          "chrome/21.0",
-          "chrome/22.0",
           "chrome/23.0",
           "firefox/3.5",
           "firefox/3.6",
